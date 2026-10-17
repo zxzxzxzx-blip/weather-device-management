@@ -1,0 +1,1 @@
+package com.weather.system.mapper; import com.baomidou.mybatisplus.core.mapper.BaseMapper; import com.weather.system.entity.MaintainPlan; public interface MaintainPlanMapper extends BaseMapper<MaintainPlan> {}

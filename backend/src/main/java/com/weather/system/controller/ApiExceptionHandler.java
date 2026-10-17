@@ -1,0 +1,2 @@
+package com.weather.system.controller; import org.springframework.http.*; import org.springframework.web.bind.annotation.*; import java.util.*;
+@RestControllerAdvice public class ApiExceptionHandler { @ExceptionHandler(Exception.class) public ResponseEntity<Map<String,Object>> handle(Exception e){Map<String,Object> m=new HashMap<>();m.put("message",e.getMessage()==null?"请求失败":e.getMessage());return ResponseEntity.badRequest().body(m);} }
